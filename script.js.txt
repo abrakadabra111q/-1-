@@ -1,0 +1,17 @@
+function toggleInfo(id) {
+    let allInfos = document.querySelectorAll(".infection-info");
+    
+    allInfos.forEach(info => {
+        if (info.id !== id) {
+            info.style.display = "none";
+        }
+    });
+
+    let element = document.getElementById(id);
+    if (element.style.display === "block") {
+        element.style.display = "none";
+    } else {
+        element.style.display = "block";
+        element.style.animation = "fadeIn 0.3s ease-in-out";
+    }
+}
