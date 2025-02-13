@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+}
+
+h1, h2 {
+    margin: 20px 0;
+}
+
+.infection-container, .prevention, .treatment {
+    margin: 20px;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.infection-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.infection-item, .prevention-item, .treatment-item {
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background: #eee;
+    border-radius: 10px;
+    transition: 0.3s;
+    width: 150px;
+}
+
+.infection-item:hover, .prevention-item:hover, .treatment-item:hover {
+    background: #ddd;
+}
+
+.infection-item img, .prevention-item img, .treatment-item img {
+    width: 70px;
+    height: 70px;
+}
+
+.infection-info {
+    display: none;
+    padding: 10px;
+    background: #ffebcc;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
